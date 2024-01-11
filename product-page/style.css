@@ -1,0 +1,400 @@
+/* Basic Styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+/* Columns */
+.left-column {
+  width: 100%;
+  position: relative;
+}
+
+.right-column {
+  width: 100%;
+  margin-top: 60px;
+}
+
+
+/* Left Column */
+.left-column img {
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.left-column img.active {
+  opacity: 5;
+}
+
+
+/* Right Column */
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+/* Product Configuration */
+.product-color span,
+.cable-config span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #86939E;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Product Color */
+.product-color {
+  margin-bottom: 30px;
+}
+
+.color-choose{
+  z-index:2;
+  position:absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.color-choose div {
+  display: flex;
+  flex-direction:column;
+  
+
+}
+
+.color-choose input[type="radio"] {
+  display: none;
+}
+
+.color-choose input[type="radio"] + label span {
+  display: flex;
+  flex-direction:column;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.color-choose input[type="radio"] + label span {
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+
+.color-choose input[type="radio"]#red + label span {
+  background-image: url('https://www.graza.co/cdn/shop/products/graza-pdp-drizzle-header-3_2x_569477b7-acf0-4950-93a4-c263d6893aa4_720x.jpg?v=1698551972');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.color-choose input[type="radio"]#blue + label span {
+  background-image: url('https://www.graza.co/cdn/shop/products/graza-pdp-sizzle-header-3_2x_98f6ef49-281f-4095-b8bb-3045391401fe_720x.jpg?v=1698551972');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.color-choose input[type="radio"]#black + label span {
+  background-image: url('https://www.graza.co/cdn/shop/files/graza-pdp-duo-header-3_2x_caa7f912-38b3-4e36-b928-ed6c036abfc7_720x.jpg?v=1698551972');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.color-choose input[type="radio"]#white + label span {
+  background-image: url('https://www.graza.co/cdn/shop/products/graza-home-drizzle-in-use_2x_91b89a03-a404-434d-ae48-fb97e37406ab_720x.jpg?v=1698551972');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.color-choose input[type="radio"]#green + label span {
+  background-image: url('https://www.graza.co/cdn/shop/products/graza-pdp-duo-header-2_2x_7673c33b-ecf4-43d9-b053-4261454c4f3c_720x.jpg?v=1698551972');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.color-choose input[type="radio"]#pink + label span {
+  background-image: url('https://www.graza.co/cdn/shop/products/graza-home-sizzle-in-usecopy_2x_47ab5af6-0732-4835-96ba-9853798e5b9d_720x.jpg?v=1698551');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.color-choose input[type="radio"]:checked + label span {
+  background-image: url(images/check-icn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Cable Configuration */
+.cable-choose {
+  margin-bottom: 30px;
+}
+
+.cable-choose button {
+  border: 4px solid #E1E8EE;
+border-radius: 30px;
+  padding: 13px 20px;
+  font-size: 10px;
+  color: #5E6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .5s;
+}
+.checked {
+  color: orange;
+}
+
+.cable-choose button:hover,
+.cable-choose button:active,
+.cable-choose button:focus {
+  border: 2px solid #86939E;
+  outline: none;
+}
+.button {
+  background-color: #080808;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition: all .5s;
+}
+.button5 {border-radius: 50%;}
+
+hr {
+  border: none;
+  border-top: 2px dotted #080808;
+  color: black;
+  background-color: #fff;
+  height: 1px;
+  width: 90%;
+}
+.pookie{
+  display: flex;
+  flex:1;
+}
+.pookie1, .pookie2,.pookie3{
+  flex:1;
+}
+.pookie1{
+  border-radius: 50px 20px 20px 20px;
+}
+.cable-config {
+  border:thin solid #000000;
+  border-width: 2px 2px;
+  border-radius: 40px;
+}
+
+.cable-config a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+.cable-config a:before {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 80%;
+  }
+
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+}
+
+/* @media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -85px;
+  }
+} */
+#dropdown {
+  position: relative;
+  display: inline-block;
+ }
+ 
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ }
+ 
+ .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ }
+ 
+ .dropdown-content a:hover {
+  background-color: #f1f1f1;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+  display: block;
+ }
+ 
+ .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+ }
+ 
+ .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+ }
+
+.button1 {
+	--background-color: #005aff;
+	--background-color-dark: #002d81;
+
+	display: inline-block;
+	margin: 0 8px;
+	padding: 10px 16px;
+  width : 100%;
+	font-family: 'Boogaloo', cursive;
+	font-size: 24px;
+	color: #ffffff;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: var(--background-color);
+	transform: translateX(5px) translateY(5px);
+  box-shadow: 7px 7px 0 var(--background-color-dark);
+}
+.button:active {
+	transform: translateX(2px) translateY(2px);
+	box-shadow: 2px 2px 0 var(--background-color-dark);
+}
+
+.button--secondary {
+	--background-color: #FF00DA;
+	--background-color-dark: #840070;
+}
+
+h1 {
+  color: #4B0082;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #7B68EE;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #9370DB;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #999999;
+}
+#top-border {
+  width: 100%;
+  height: 50px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: relative;
+}
+
+#top-border {
+  position: absolute;
+  font-size: 16px;
+  color: #333;
+  z-index: 1;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ffffff;
+
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

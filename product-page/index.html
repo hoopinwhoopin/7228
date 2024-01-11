@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Graza</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+
+  </head>
+
+  <body>
+    <style>
+      
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 30px;
+        text-align: center;
+      }
+      </style>
+      
+
+    <div id="top-border">
+      <p>"HI! WE ,THANKYOU FOR VISITING OUR SITE " </p>
+  
+    <!-- <main class="container"> -->
+    
+      <div class="grid-container">
+      <!-- Left Column / Headphones Image -->
+      
+      <div class="grid-item">
+      <div class="left-column">
+        <img data-image="black" class="active"  src="https://www.graza.co/cdn/shop/files/graza-pdp-duo-header-3_2x_caa7f912-38b3-4e36-b928-ed6c036abfc7_720x.jpg?v=1698551972" alt="hi">
+        <img data-image="blue" src="https://www.graza.co/cdn/shop/products/graza-pdp-sizzle-header-3_2x_98f6ef49-281f-4095-b8bb-3045391401fe_720x.jpg?v=1698551972" alt="hii">
+        <img data-image="red" src= "https://www.graza.co/cdn/shop/products/graza-pdp-drizzle-header-3_2x_569477b7-acf0-4950-93a4-c263d6893aa4_720x.jpg?v=1698551972" alt="hiii">
+        <img data-image="white" src="https://www.graza.co/cdn/shop/products/graza-home-drizzle-in-use_2x_91b89a03-a404-434d-ae48-fb97e37406ab_720x.jpg?v=1698551972" alt="hi">
+        <img data-image="green" src="https://www.graza.co/cdn/shop/products/graza-pdp-duo-header-2_2x_7673c33b-ecf4-43d9-b053-4261454c4f3c_720x.jpg?v=1698551972" alt="hii">
+        <img data-image="pink" src= "https://www.graza.co/cdn/shop/products/graza-home-sizzle-in-usecopy_2x_47ab5af6-0732-4835-96ba-9853798e5b9d_720x.jpg?v=1698551" alt="hiii">
+      </div>
+      
+    </div>
+    <div class="color-choose">
+      <div>
+        <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+        <label for="red"><span></span></label>
+      </div>
+      <div>
+        <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+        <label for="blue"><span></span></label>
+      </div>
+      <div>
+        <input data-image="black" type="radio" id="black" name="color" value="black">
+        <label for="black"><span></span></label>
+      </div>
+      <div>
+        <input data-image="white" type="radio" id="white" name="color" value="white" >
+        <label for="white"><span></span></label>
+      </div>
+      <div>
+        <input data-image="green" type="radio" id="green" name="color" value="green">
+        <label for="green"><span></span></label>
+      </div>
+      <div>
+        <input data-image="pink" type="radio" id="pink" name="color" value="pink">
+        <label for="pink"><span></span></label>
+      </div>
+    </div>
+      <!-- Right Column -->
+      <div class="grid-item">
+      
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Headphones</span>
+          <h1>"Drizzle" &"Sizzle"<br><u>Extra Virgin Olive Oil</u></h1>
+          <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            881 Reviews
+          
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          
+          <div class="cable-config">
+            <span></span>
+       <div class = "border">
+            <div class="cable-choose">
+              <button onclick="displayText('b1'); changeContent(0) ">1<br>SETS<br>Free Shipping<br>+10%OFF</button>
+              <button onclick="displayText('b2'); changeContent(1)">2<br>SETS<br>Free Shipping<br>+14%OFF</button>
+              <button onclick="displayText('b3'); changeContent(2)">3<br>SETS<br>Free Shipping<br>+15%OFF</button>
+              <button onclick="displayText('b4') ;changeContent(3)">6<br>SETS<br>Free Shipping<br>+17%OFF</button>
+            </div>
+       <hr>
+    
+        <button onclick="toggle(true)" class="button button5"></button>          One Time Purchase
+       
+       <hr>
+       <button onclick="toggle(false)" class="button button5"></button>            Subscibe & Save <br>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Circular Dropdown Content</title>
+       <style>
+           #dropdown {
+               border-radius: 50px;
+               width: 80%; /* Make the dropdown button circular */
+               padding: 10px;
+           }
+   
+           #text-container {
+               margin-top: 20px;
+           }
+       </style>
+   
+   
+   <select id="dropdown" onchange="changeContent()">
+       <option value="option1">Option 1</option>
+       <option value="option2">Option 2</option>
+       <option value="option3">Option 3</option>
+   </select>
+   
+   
+   
+   <!-- <script>
+       function changeContent() {
+          
+           var textContainer = document.getElementById('text-container');
+   
+           // Get the selected option value
+           var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+   
+           // Update content based on the selected option
+           if (selectedOption === 'option1') {
+               textContainer.innerHTML = 'Content for Option 1.';
+           } else if (selectedOption === 'option2') {
+               textContainer.innerHTML = 'Content for Option 2.';
+           } else if (selectedOption === 'option3') {
+               textContainer.innerHTML = 'Content for Option 3.';
+           }
+       }
+   </script> -->
+   
+       <hr>
+       <button type="button" id="btt" class="button button--tertiary">Subscribe - $185.07</button>
+    
+        Skip or Cancel Anytime
+       </p>
+      </div>
+          </div>
+          <div>
+        
+          
+        
+    
+      
+            <!-- <p>
+                <button onclick="document.getElementById('description').style.display='block'"></button>
+                <button onclick="document.getElementById('useCases').style.display='block'"></button>
+                <button onclick="document.getElementById('useCases').style.display='block'"> </button>
+            </p>
+            <p id="description" style="display: none;">Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and antioxidants are highest. Made for eating, never heating.</p>
+            <p id="useCases" style="display: none;">Extra Virgin </p>
+            <p id="Harvest" style="display: none;">Extra Virgin </p>
+         -->
+         <div class="pookie">
+         <button class="pookie1" onclick="displayText('Description')">Description</button>
+         <button class="pookie2" onclick="displayText('Harvest')">Harvest</button>
+         <button class="pookie3" onclick="displayText('Use Cases')">Use Cases</button>
+        </div>
+         <div class="cable-config">
+    <style>
+        #text-container {
+            margin-top: 20px;
+        }
+    </style>
+
+
+
+<div id="text-container">DRIZZLE: 500ML <br> Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and antioxidants are highest. Made for eating, never heating<br> SIZZLE: 750ML <br>Exta Virgin cooking oil made from mature, mid-season olives that yield a more mellow flavor. Use it every day, in every way.'</div>
+
+<script>
+  let toggle1=true;
+  let OneTimePrice =['$37', '$69', '$102', '$199'];
+    function displayText(button) {
+        var textContainer = document.getElementById('text-container');
+        
+        // Clear previous text
+        textContainer.innerHTML = '';
+
+        // Display text based on the clicked button
+        if (button === 'Description') {
+            textContainer.innerHTML = 'DRIZZLE: 500ML <br> Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and antioxidants are highest. Made for eating, never heating<br> SIZZLE: 750ML <br>Exta Virgin cooking oil made from mature, mid-season olives that yield a more mellow flavor. Use it every day, in every way.';
+        } else if (button === 'Harvest') {
+            textContainer.innerHTML = 'DRIZZLE: <br> Harvested in October, before the olives have ripened fully. Picked by hand because young olives need a firm yank to loosen up.<br>SIZZLE: <br>Harvested in November and December, when the olives are more mature. They’re pretty laid back by this point, so it only takes a few shakes to get them off the branch. ';
+        }
+        else if (button ==='Use Cases'){
+          textContainer.innerHTML =  'DRIZZLE: <br> A little Drizzle goes a long way! Use it on and around things like ice cream, pesto, popcorn, salads, sandwiches or even directly on your tongue (we won’t tell). <br> SIZZLE: <br>If you would put it in or on top of an oven, use sizzle. Chicken Cutlets, Sheet Pan Veggies, Fried Rice, or even Chocolate Chip Cookies! You name it, Sizzle sizzles it. '
+        }
+    }
+    function changeContent(id){
+      console.log(OneTimePrice);
+    document.getElementById('btt').innerHTML = 'Subscribe - '+  OneTimePrice[id];
+    }
+    function toggle(toggle){
+      if(toggle){
+        document.getElementById('btt').innerHTML = 'Subscribe - $37';
+        OneTimePrice =['$37', '$69', '$102', '$199'];
+      }
+      else{
+        document.getElementById('btt').innerHTML = 'Subscribe - $33.30';
+        OneTimePrice =['$33.30', '$64.17', '$94.86', '$185.07'];
+        console.log(OneTimePrice);
+      }
+    }
+</script>
+</div>
+          
+       </div>
+       </div>
+      </div>
+    </div>
+    <!-- </main> -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
